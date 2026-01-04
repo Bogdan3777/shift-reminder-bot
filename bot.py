@@ -4,7 +4,8 @@ import datetime
 import calendar
 import urllib.parse  # Для правильного кодування посилання
 
-TOKEN = '8131533249:AAGZ6aLPIXXk3KsKZe1Zt4Cyw-ws4EsaLts'  # ← Замініть на свій токен!
+import os
+TOKEN = os.getenv('TOKEN')  # Токен додамо в Render як змінну
 
 bot = telebot.TeleBot(TOKEN)
 
